@@ -1,0 +1,33 @@
+
+:root{
+  --header1:#4a88c7; --header2:#2d5f9a;
+  --bg:#c7ddf1; --panel:#dbeaf9; --border:#b9d0ea; --link:#1c4e91; --text:#0f2b4a;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Tahoma,Verdana,Arial,sans-serif;background:var(--bg);color:var(--text)}
+.header{background:linear-gradient(180deg,var(--header1),var(--header2));color:#eef6ff;border-bottom:4px solid #9fc4eb}
+.header .wrap{max-width:1100px;margin:0 auto;padding:10px 14px}
+.banner{display:flex;align-items:center;gap:14px}
+.banner img{height:60px;border-radius:4px}
+.banner h1{margin:0;font-size:26px}
+.banner p{margin:2px 0 0 0;font-size:12px}
+.topbar{display:flex;justify-content:space-between;align-items:center;margin-top:8px}
+.search input{width:260px;padding:6px 10px;border:1px solid var(--border);border-radius:4px;background:#ecf5ff}
+.search button{padding:6px 10px;border:1px solid var(--border);border-radius:4px;background:#e1efff}
+.layout{max-width:1100px;margin:16px auto;display:grid;grid-template-columns:180px 1fr 280px;gap:16px}
+.left{background:#eaf3ff;border:1px solid var(--border);border-radius:6px;padding:10px}
+.menu a{display:block;padding:8px 10px;margin:8px 0;background:#fff;border:1px solid var(--border);border-radius:4px;color:var(--link);text-decoration:none}
+.menu a:hover{background:#f6fbff}
+.center{background:var(--panel);border:1px solid var(--border);border-radius:6px;padding:16px}
+.center h2{margin:6px 0 10px 0;text-align:center;color:#1f3f69}
+.hero{width:100%;display:block;border:1px solid var(--border);border-radius:4px}
+.article{background:#fff;border:1px solid var(--border);margin-top:10px;padding:12px;border-radius:6px}
+.right{background:#eaf3ff;border:1px solid var(--border);border-radius:6px;padding:12px}
+.card{background:#fff;border:1px solid var(--border);border-radius:6px;padding:8px;margin-bottom:12px}
+.card img{width:100%;display:block;border-radius:4px;border:1px solid var(--border)}
+.date{font-size:12px;color:#2e507d;margin:0 0 6px 0}
+.nav-inline a{display:inline-block;margin-right:10px;padding:6px 10px;background:#fff;border:1px solid var(--border);border-radius:4px;text-decoration:none;color:var(--link)}
+footer{max-width:1100px;margin:10px auto 30px auto;text-align:center;color:#24476f}
+.responsive{width:100%;aspect-ratio:16/9;border:0;border-radius:6px}
+.hidden{display:none}
+@media(max-width:1024px){.layout{grid-template-columns:1fr}}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wahyu Sugiarto</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <audio id="bgm" src="assets/audio/bg.mp3" loop></audio>
+    <script>
+      const a = document.getElementById("bgm");
+      a.volume = 0.25;
+      function startAudio() {
+        a.play();
+        document.getElementById("playbtn").classList.add("hidden");
+      }
+    </script>
+
+    <header class="header">
+      <div class="wrap">
+        <div class="topbar">
+          <nav class="nav-inline">
+            <a href="index.html">Home</a>
+            <a href="list.html">List Perjalanan</a>
+            <a href="table.html">Tabel Biaya</a>
+            <a href="frame.html">Frame</a>
+            <a href="iframe.html">iFrame</a>
+          </nav>
+          <div class="search">
+            <input type="text" placeholder="Search" /><button>Cari</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="left">
+        <div class="menu">
+          <a href="index.html">Home</a>
+          <a href="list.html">List Perjalanan</a>
+          <a href="table.html">Tabel Biaya</a>
+          <a href="frame.html">Frame</a>
+          <a href="iframe.html">iFrame</a>
+        </div>
+        <div class="menu" style="margin-top: 6px">
+          <a id="playbtn" onclick="startAudio()">▶ Putar Musik Latar</a>
+        </div>
+      </aside>
+
+      <main class="center">
+        
+        <h2>WELCOME TO MY HOLIDAY</h2>
+        <p> By: Wahyu Sugiarto</p>
+        <img src="assets/img/hero.jpg" class="hero" alt="Pulau Seribu" />
+        <div class="article">
+          <p>
+            Pulau Seribu adalah gugusan pulau di utara Jakarta dengan air
+            bening, pasir putih, dan spot snorkeling yang populer. Di situs ini
+            kamu bisa melihat itinerary, estimasi biaya, dan peta lokasi untuk
+            merencanakan liburan.
+          </p>
+          <p>
+            Gunakan menu di kiri atau bar atas untuk membuka halaman List
+            (bullet & numbering), Tabel biaya, halaman Frame, dan iFrame.
+          </p>
+        </div>
+        <div class="card" style="margin-top: 10px">
+          <strong>Video Pulau Seribu</strong>
+          <iframe
+            class="responsive"
+            src="assets/video/vid.mp4"
+            title="Pulau Seribu"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </main>
+
+      <aside class="right">
+        <h3 style="margin-top: 0">OUR RECOMMENDED PLACES</h3>
+        <div class="card">
+          <img src="assets/img/seribu.jpg" alt="Pulau Tidung" /><strong
+            >Pulau Tidung</strong
+          >
+          <p style="font-size: 13px; margin: 6px 0 0">
+            Ikonik dengan Jembatan Cinta & snorkeling.
+          </p>
+        </div>
+        <div class="card">
+          <img src="assets/img/tidung.jpg" alt="Pulau Pramuka" /><strong
+            >Pulau Pramuka</strong
+          >
+          <p style="font-size: 13px; margin: 6px 0 0">
+            Pusat konservasi penyu dan akses mudah.
+          </p>
+        </div>
+        <div class="card">
+          <img src="assets/img/pari.jpg" alt="Pulau Pari" /><strong
+            >Pulau Pari</strong
+          >
+          <p style="font-size: 13px; margin: 6px 0 0">
+            Pantai Pasir Perawan, tenang dan bersih.
+          </p>
+        </div>
+      </aside>
+    </div>
+
+    <footer><p>© 2025 Wahyu Sugiarto</p></footer>
+    <script>
+      const d = new Date();
+      document.getElementById("date").textContent = d.toLocaleDateString(
+        "id-ID",
+        { year: "numeric", month: "long", day: "numeric" }
+      );
+    </script>
+  </body>
+</html>

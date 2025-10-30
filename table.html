@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabel Biaya — Pulau Seribu</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        overflow: hidden;
+      }
+      th,
+      td {
+        padding: 10px;
+        border-bottom: 1px solid var(--border);
+        text-align: left;
+      }
+      thead {
+        background: #e6f2ff;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrap">
+        <div class="banner">
+          
+          <div>
+            <h1>Tabel Biaya — Pulau Seribu</h1>
+          </div>
+        </div>
+        <nav class="nav-inline">
+          <a href="index.html">Home</a>
+          <a href="list.html">List Perjalanan</a>
+          <a href="table.html">Tabel Biaya</a>
+          <a href="frame.html">Frame</a>
+          <a href="iframe.html">iFrame</a>
+        </nav>
+      </div>
+    </header>
+    <div class="layout" style="grid-template-columns: 1fr">
+      <main class="center">
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Qty</th>
+              <th>Harga</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tiket Kapal (PP)</td>
+              <td>2</td>
+              <td>Rp 200.000</td>
+              <td>Rp 400.000</td>
+            </tr>
+            <tr>
+              <td>Penginapan (3 malam)</td>
+              <td>1</td>
+              <td>Rp 450.000</td>
+              <td>Rp 450.000</td>
+            </tr>
+            <tr>
+              <td>Sewa Perahu/Hopping Island</td>
+              <td>1</td>
+              <td>Rp 350.000</td>
+              <td>Rp 350.000</td>
+            </tr>
+            <tr>
+              <td>Makan</td>
+              <td>8</td>
+              <td>Rp 50.000</td>
+              <td>Rp 400.000</td>
+            </tr>
+            <tr>
+              <td>Sewa Alat Snorkeling</td>
+              <td>2</td>
+              <td>Rp 35.000</td>
+              <td>Rp 70.000</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th colspan="3">Perkiraan Total</th>
+              <th>Rp 1.670.000</th>
+            </tr>
+          </tfoot>
+        </table>
+      </main>
+    </div>
+  </body>
+</html>

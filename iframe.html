@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>iFrame — Pulau Seribu</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="header">
+  <div class="wrap">
+    <div class="banner">
+      
+      <div>
+        <h1>iFrame — Pulau Seribu</h1>
+        
+      </div>
+    </div>
+    <nav class="nav-inline">
+      <a href="index.html">Home</a>
+      <a href="list.html">List </a>
+      <a href="table.html">Tabel Biaya</a>
+      <a href="frame.html">Frame</a>
+      <a href="iframe.html">iFrame</a>
+    </nav>
+  </div>
+</header>
+
+<div class="layout" style="grid-template-columns:1fr">
+  <main class="center">
+
+    <!-- Embed halaman internal -->
+    <h2>Halaman Internal</h2>
+    <iframe class="responsive" src="list.html" title="List"></iframe>
+
+    <!-- Embed Google Maps -->
+    <h2 style="margin-top:20px">Peta Pulau Seribu</h2>
+    <iframe class="responsive" 
+      src="https://www.google.com/maps?q=Kepulauan+Seribu&output=embed" 
+      title="Google Maps Pulau Seribu"></iframe>
+
+    <!-- Embed YouTube -->
+    <h2 style="margin-top:20px">Video Pulau Seribu</h2>
+    <iframe class="responsive" 
+      src="assets/video/vid.mp4" 
+      title="Video Pulau Seribu" allowfullscreen></iframe>
+
+    <!-- Embed situs eksternal -->
+    <h2 style="margin-top:20px">Website Resmi Pariwisata</h2>
+    <a href="https://pulauseribu.jakarta.go.id/" target="_blank">
+      LINK WEBSITE
+    </a>
+    <iframe class="responsive" 
+      src="assets/img/web.png" 
+      title="Jakarta Tourism"></iframe>
+
+  </main>
+</div>
+</body>
+</html>
